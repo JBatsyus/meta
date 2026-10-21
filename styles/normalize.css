@@ -209,18 +209,11 @@ svg * {
     overflow: hidden !important;
 }
 
-@media (width <=47.99875rem) {
-    .hidden-mobile {
-        display: none !important;
-    }
-}
-
 html.no-scroll {
     position: fixed;
     inset: 0;
     overflow: hidden;
 }
-
 
 body,
 html {
@@ -242,17 +235,14 @@ body {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    font-family: var(--font-family-base);
+    font-family: "Rubik", sans-serif;
     background-color: #f2f1f1;
     font-weight: 400;
 }
 
-
-
 main {
     flex-grow: 1;
 }
-
 
 a,
 button,
@@ -261,7 +251,7 @@ input,
 textarea,
 select,
 svg * {
-    transition-duration: var(--transition-duration);
+    transition-duration: 0.4s;
 }
 
 a {
@@ -283,143 +273,7 @@ a[class] {
 }
 
 :focus-visible {
-    outline: 0.125rem dashed var(--grad-end);
+    outline: 0.125rem dashed #0084ff;
     outline-offset: 0.125rem;
     transition-duration: 0s !important;
 }
-
-.highlight {
-    color: var(--blue_dark);
-}
-
-
-/*--------- КНОПКИ (START)--------*/
-.button {
-    display: inline-flex;
-    justify-content: center;
-    min-width: 7.25rem;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    white-space: nowrap;
-    border-radius: 1.125rem;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
-    border: 1px solid transparent;
-}
-
-.button--primary {
-    color: var(--white);
-    background-color: var(--color-secondary);
-}
-
-@media (any-hover: hover) {
-    .button--primary:hover {
-        background-color: var(--blue_hover);
-    }
-}
-
-@media (any-hover: none) {
-    .button--primary:active {
-        background-color: var(--blue_hover);
-    }
-}
-
-.button--primary:active {
-    background: var(--blue_press);
-}
-
-.button--secondary {
-    font-weight: 600;
-    color: var(--blue_black);
-    background-color: var(--white);
-}
-
-@media (any-hover: hover) {
-    .button--secondary:hover {
-        color: var(--blue_hover);
-    }
-}
-
-@media (any-hover: none) {
-    .button--secondary:active {
-        color: var(--blue_hover);
-    }
-}
-
-.button--secondary:active {
-    color: var(--blue_press);
-}
-
-.button--inverted {
-    background-color: transparent;
-    color: var(--white);
-    border: 1px solid var(--white);
-}
-
-@media (any-hover: hover) {
-    .button--inverted:hover {
-        background-color: var(--white);
-        color: var(--blue_hover);
-        border: 1px solid transparent;
-    }
-}
-
-@media (any-hover: none) {
-    .button--inverted:active {
-        background-color: var(--white);
-        color: var(--blue_hover);
-        border: 1px solid transparent;
-    }
-}
-
-.button--inverted:active {
-    color: var(--blue_press);
-}
-
-.button--accent {
-    border: 1px solid var(--blue_dark);
-    color: var(--blue_dark);
-    background-color: transparent;
-}
-
-@media (any-hover: hover) {
-    .button--accent:hover {
-        color: var(--blue_hover);
-        border: 1px solid var(--blue_hover);
-    }
-}
-
-@media (any-hover: none) {
-    .button--accent:active {
-        color: var(--blue_hover);
-        border: 1px solid var(--blue_hover);
-    }
-}
-
-.button--accent:active {
-    border: 1px solid var(--blue_press);
-    color: var(--blue_press);
-}
-
-.btn-text {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
-    text-decoration: underline !important;
-    text-align: center;
-    color: var(--blue_black);
-    background-color: transparent;
-    border: 1px solid transparent;
-}
-
-.btn-text:hover {
-    color: var(--blue_hover);
-}
-
-.btn-text:active {
-    color: var(--blue_press);
-}
-
-/*--------- КНОПКИ (END)--------*/
